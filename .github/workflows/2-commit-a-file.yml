@@ -32,6 +32,7 @@ jobs:
       current_step: ${{ steps.get_step.outputs.current_step }}
 
   on_commit_a_file:
+    # Fires on a commit
     name: On commit a file
     needs: get_current_step
 
